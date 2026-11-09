@@ -463,3 +463,20 @@ html.menu-open { overflow: hidden; }
   .project-cursor { display: none; }
   .circle-arrow, .system-figure img, .browser-preview, .workflow-preview { transform: none !important; translate: 0 0 !important; }
 }
+
+/* Approved text-only operations work, with no client imagery. */
+.project-operations { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 60px; padding-top: 12px; }
+.operations-intro h3 { max-width: 480px; font-size: clamp(36px, 4vw, 56px); line-height: 1.12; letter-spacing: -.04em; }
+.operations-intro > p { margin-top: 28px; max-width: 390px; color: var(--muted); font-size: 18px; line-height: 1.65; }
+.operations-contributions { margin: 0; padding-left: 20px; display: grid; gap: 18px; font-size: 18px; line-height: 1.65; }
+.operations-contributions li { padding-left: 5px; }
+.operations-contributions li::marker { color: var(--blue); }
+.operations-technologies { margin-top: 30px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.operations-technologies strong { color: var(--ink); font-weight: 400; }
+@media (max-width: 760px) {
+  .project-operations { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-top: 0; scroll-margin-top: 64px; }
+  .operations-intro h3 { font-size: clamp(32px, 8.6vw, 44px); }
+  .operations-intro > p { margin-top: 22px; font-size: 17px; }
+  .operations-contributions { font-size: 16px; gap: 16px; }
+  .operations-technologies { font-size: 13px; }
+}
