@@ -135,6 +135,9 @@ a:hover .arrow { transform: translate(3px, -3px); }
 .experience-achievements > li::before { content: ''; position: absolute; top: .7em; left: 0; width: 4px; height: 4px; border-radius: 50%; background: #a5b6ff; }
 .experience-stack { color: #a8afbf; font-size: 11px; line-height: 1.8; margin-top: 23px; }
 .experience-content .text-link { font-size: 15px; margin-top: 16px; gap: 15px; }
+.experience-project-links { display: grid; justify-items: start; gap: 8px; margin-top: 22px; }
+.experience-content .experience-project-links .text-link { min-height: 44px; margin-top: 0; line-height: 1.5; }
+.experience-project-links .text-link > span { flex-shrink: 0; }
 @supports (interpolate-size: allow-keywords) and (transition-behavior: allow-discrete) {
   .experience details { interpolate-size: allow-keywords; }
   .experience details::details-content { block-size: 0; opacity: 0; overflow: clip; transition: block-size .35s ease, opacity .25s ease, content-visibility .35s allow-discrete; }
