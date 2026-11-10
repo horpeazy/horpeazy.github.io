@@ -480,3 +480,15 @@ html.menu-open { overflow: hidden; }
   .operations-contributions { font-size: 16px; gap: 16px; }
   .operations-technologies { font-size: 13px; }
 }
+
+/* Approved fictional mockups retain their complete image and visible labels. */
+.project-mockup { grid-column: 1 / -1; min-width: 0; }
+.project-mockup > img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; }
+.project-mockup figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 28px; padding-top: 16px; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.project-mockup figcaption strong { display: block; color: var(--ink); font-weight: 600; }
+.project-mockup figcaption p { margin-top: 4px; }
+.project-mockup figcaption a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+.project-mockup figcaption a:hover { color: var(--blue); }
+@media (max-width: 760px) {
+  .project-mockup figcaption { font-size: 13px; gap: 6px; }
+}
